@@ -2,7 +2,7 @@
 
 # Portfólio-DS
 </div>
-<P> Portfólio do ensino técnico em Desenvolvimento de Sistemas. <p>
+<P> + Portfólio do ensino técnico em Desenvolvimento de Sistemas. <p>
 
 <h2> Ver Portfólio das áreas de conhecimento padrão: </h2>
 
