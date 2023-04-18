@@ -1,4 +1,4 @@
-function bhaskara(a, b, c){
+function bhaskara(){
 
 a = prompt ("Digite o valor de A:\n");
 b = prompt ("Digite o valor de B:\n");
