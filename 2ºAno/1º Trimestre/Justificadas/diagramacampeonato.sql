@@ -48,7 +48,8 @@ INSERT INTO clube (nome_clube_pk, informacoes_jogos_fk, campeonato_atual, coloca
 VALUES ('Avaí', 'em breve','série B', 12,'disponível','24'), 
 ('Figueirense', 'começo: dia 20','série C', 15, 'disponível', '19') 
 
-INSERT INTO jogador (cpf_pk, nome, nome_clube_fk, salario, camisa, posicao) VALUES ('xxx.xxx.xxx-xx', 'Messi', 'Avaí', 41000000, 30,'ponta'), 
+INSERT INTO jogador (cpf_pk, nome, nome_clube_fk, salario, camisa, posicao) 
+VALUES ('xxx.xxx.xxx-xx', 'Messi', 'Avaí', 41000000, 30,'ponta'), 
 ('yyy.yyy.yyy-yy', 'Cristiano Ronaldo', 'Figueirense', 62000000, 7, 'ponta') 
 
 SELECT * FROM campeonato 
