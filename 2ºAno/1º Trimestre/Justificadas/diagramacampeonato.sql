@@ -17,7 +17,8 @@ FOREIGN KEY (grade_fk) REFERENCES campeonato (grade_pk)
 ); 
 CREATE TABLE clube ( 
 nome_clube_pk VARCHAR(20) NOT NULL, 
-informacoes_jogos_fk VARCHAR(50) NOT NULL, campeonato atual VARCHAR(40) NOT NULL, 
+informacoes_jogos_fk VARCHAR(50) NOT NULL, 
+campeonato atual VARCHAR(40) NOT NULL, 
 colocacao INT, 
 diretoria VARCHAR(1000) NOT NULL, 
 jogadores VARCHAR(200) NOT NULL, 
