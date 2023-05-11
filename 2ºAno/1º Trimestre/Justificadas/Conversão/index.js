@@ -22,3 +22,5 @@ function converte() {
 
     document.getElementById("resultado").innerHTML = resultadoFinal
 }
+
+converte()
