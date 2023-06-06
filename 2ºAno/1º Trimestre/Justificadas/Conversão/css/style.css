@@ -13,71 +13,42 @@ body {
 
 #titulo {
     text-align: center;
-    font-size: xx-large;
-    margin-top: 10px;
+    font-size: x-large;
+    margin-top: 30px;
 }
 
 .geral {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; 
+    font-family: system-ui;
 }
 
 #temperatura {
     text-align: justify;
     padding: 5px;
     background-color: white;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid black;
     color: black;
-    border-radius: 5px;
-}
-
-#temperatura:hover {
-    text-align: justify;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(28, 68, 201);
-    color: black;
-    border-radius: 5px;
-}
-
-.radios {
-    margin-left: 590px;
-    text-align: justify;
-    font-size: large;
-
-}
-
-#cf {
-    margin-top: 20px;
 }
 
 #botao {
-    margin-top: 10px;
     height: 8vh;
-    width: 10vw;
-    text-align: center;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 0, 0);
+    width: 15vw;
+    background-color: white;
+    border: 1px solid black;
     color: black;
-    border-radius: 5px;
 }
 
 #botao:hover {
-    margin-top: 10px;
     height: 8vh;
-    width: 10vw;
-    text-align: center;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(28, 68, 201);
-    color: black;
-    border-radius: 5px;
+    width: 15vw;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
 }
 
 #resultado {
-    margin-top: 10px;
-    font-size: x-large;
-    color: darkblue;
+    font-size: larger;
+    color: black;
     font-family: system-ui;
 }
