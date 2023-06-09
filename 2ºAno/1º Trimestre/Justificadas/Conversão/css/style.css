@@ -11,12 +11,6 @@ body {
 
 /* id=# class=. */
 
-#titulo {
-    text-align: center;
-    font-size: x-large;
-    margin-top: 30px;
-}
-
 .geral {
     text-align: center;
     margin-top: 20px; 
@@ -24,11 +18,9 @@ body {
 }
 
 #temperatura {
-    text-align: justify;
     padding: 5px;
     background-color: white;
     border: 1px solid black;
-    color: black;
 }
 
 #botao {

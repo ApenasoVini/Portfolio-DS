@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-
-    <!--Início da página html-->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,18 +10,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medir Temperatura</title>
-</head>
+    <title>Converter Temperatura</title>
 
+</head>
 <body>
-    <!--Título-->
-    <h1 id="titulo">Temperatura</h1>
+    
     <div class="geral">
-        <!--input do tipo number (usa números), que usa um valor escrito pelo usuário-->
+        
         <input id="temperatura" type="number" placeholder="Digite a temperatura"><br>
         <br>
-        <!--input do mesmo nome do tipo "radio", com o mesmo nome é possível selecionar apenas um por vez-->
-
         <input id="cf" name="tipo" type="radio">Celsius para Fahrenheit</input><br>
         <input id="ck" name="tipo" type="radio">Celsius para Kelvin</input><br>
         <input id="fc" name="tipo" type="radio">Fahrenheit para Celsius</input><br>
@@ -32,11 +27,9 @@
         <input id="kf" name="tipo" type="radio">Kelvin para Fahrenheit</input><br>
         <br>
 
-        <!--botão que está ligado a função converter-->
-
         <button onclick="converte()" type="button" id="botao">Converter</button><br>
         <br>
-        <!--texto do resultado-->
+
         <p id="resultado">Resultado</p>
     </div>
 
@@ -44,5 +37,4 @@
 
 </html>
 
-<!--conectando a página HTML com o index em javascript-->
 <script src="index.js"></script>

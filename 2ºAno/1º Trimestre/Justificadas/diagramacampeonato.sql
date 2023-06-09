@@ -15,6 +15,7 @@ grade_fk VARCHAR(1000),
 PRIMARY KEY (informacoes_pk), 
 FOREIGN KEY (grade_fk) REFERENCES campeonato (grade_pk) 
 ); 
+
 CREATE TABLE clube ( 
 nome_clube_pk VARCHAR(20) NOT NULL, 
 informacoes_jogos_fk VARCHAR(50) NOT NULL, 
@@ -25,6 +26,7 @@ jogadores VARCHAR(200) NOT NULL,
 PRIMARY KEY (nome_clube_pk), 
 FOREIGN KEY (informacoes_jogos_fk) REFERENCES jogos (informacoes_pk) 
 );
+
 CREATE TABLE jogador ( 
 cpf_pk VARCHAR(14) NOT NULL, 
 nome VARCHAR(40) NOT NULL, 
@@ -35,7 +37,6 @@ posicao VARCHAR(15) NOT NULL,
 PRIMARY KEY (cpf_pk), 
 FOREIGN KEY (nome_clube_fk) REFERENCES clube (nome_clube_pk) 
 )
-
 
 INSERT INTO campeonato (grade_pk, premiacao, organizacao, rebaixados) 
 VALUES ('', '','reavaliada',''), 
