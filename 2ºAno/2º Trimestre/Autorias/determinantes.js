@@ -7,7 +7,7 @@ function det() {
 
         var ordem = prompt("Qual é a ordem de sua matriz?\n1x1\n2x2\n3x3\n4x4");
 
-    } while (ordem == ' ' && ordem != "1x1" && ordem != "2x2" && ordem != "3x3" && ordem != "4x4" && ordem != "1" && ordem != "2" && ordem != "3" && ordem != "4");
+    } while (ordem != "1x1" && ordem != "2x2" && ordem != "3x3" && ordem != "4x4" && ordem != "1" && ordem != "2" && ordem != "3" && ordem != "4");
 
 
     switch (ordem) {
@@ -17,8 +17,8 @@ function det() {
 
             do {
                 var a11 = prompt("Qual é o elemento da matriz?");
-            } while (!numeros(a11) || a11 == " ");
-            alert(a11 + "(Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo");
+            } while (a11 == " ");
+            alert(a11 + " (Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo");
             break;
 
         case "2x2":
@@ -30,11 +30,11 @@ function det() {
                 var a21 = prompt("Qual é o elemento a21 da matriz?");
                 var a22 = prompt("Qual é o elemento a22 da matriz?");
 
-            } while (!numeros(a11) || a11 == " " || !numeros(a12) || a12 == " " || !numeros(a21) || a21 == " " || !numeros(a22) || a22 == " ");
+            } while (a11 == " " || a12 == " " || a21 == " " || a22 == " ");
 
             determinante = (a11 * a22) - (a12 * a21);
 
-            alert(determinante + "(Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária");
+            alert(determinante + " (Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária");
             break;
 
         case "3x3":
@@ -51,15 +51,17 @@ function det() {
                 var a32 = prompt("Qual é o elemento a32 da matriz?");
                 var a33 = prompt("Qual é o elemento a33 da matriz?");
 
-            } while (!numeros(a33) || a33 == " " || !numeros(a32) || a32 == " " || !numeros(a31) || a31 == " " || !numeros(a23) || a23 == " " || !numeros(a11) || a11 == " " || !numeros(a12) || a12 == " " || !numeros(a21) || a21 == " " || !numeros(a22) || a22 == " " || !numeros(a13) || a13 == " ");
+            } while (a33 == " " || a32 == " " || a31 == " " || a23 == " " || a11 == " " || a12 == " " || a21 == " " || a22 == " " || a13 == " ");
 
-            determinante = ((a11 * a22 * a33) + (a13 * a21 * a32) + (a12 * a23 * a31)) - ((a13 * a12 * a31) + (a11 * a23 * a32 ) + (a12 * a21 * a33));
+            determinante = ((a11 * a22 * a33) + (a13 * a21 * a32) + (a12 * a23 * a31)) - ((a13 * a12 * a31) + (a11 * a23 * a32) + (a12 * a21 * a33));
 
-            alert(determinante + "(Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos das diagonais principais e secundárias, juntamos todos os termos, resolvendo as adições e subtrações.");
+            alert(determinante + " (Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos das diagonais principais e secundárias, juntamos todos os termos, resolvendo as adições e subtrações.)");
             break;
 
         case "4x4":
         case "4":
+
     }
 }
+
 det();
