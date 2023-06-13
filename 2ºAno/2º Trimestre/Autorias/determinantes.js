@@ -55,7 +55,7 @@ function det() {
 
             determinante = ((a11 * a22 * a33) + (a13 * a21 * a32) + (a12 * a23 * a31)) - ((a13 * a12 * a31) + (a11 * a23 * a32 ) + (a12 * a21 * a33));
 
-            alert(determinante + "(Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos localizados na direção da diagonal secundária, trocando o sinal do produto encontrado e juntamos todos os termos, resolvendo as adições e subtrações.");
+            alert(determinante + "(Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos das diagonais principais e secundárias, juntamos todos os termos, resolvendo as adições e subtrações.");
             break;
 
         case "4x4":
