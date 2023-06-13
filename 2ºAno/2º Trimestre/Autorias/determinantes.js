@@ -53,9 +53,9 @@ function det() {
 
             } while (!numeros(a33) || a33 == " " || !numeros(a32) || a32 == " " || !numeros(a31) || a31 == " " || !numeros(a23) || a23 == " " || !numeros(a11) || a11 == " " || !numeros(a12) || a12 == " " || !numeros(a21) || a21 == " " || !numeros(a22) || a22 == " " || !numeros(a13) || a13 == " ");
 
-            determinante = (a11 * a22 * a33 + (a12 * a23 * a31) + (a13 * a21 * a32)) - (a12 * a21);
+            determinante = ((a11 * a22 * a33) + (a13 * a21 * a32) + (a12 * a23 * a31)) - ((a13 * a12 * a31) + (a11 * a23 * a32 ) + (a12 * a21 * a33));
 
-            alert(determinante + "(Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária");
+            alert(determinante + "(Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos localizados na direção da diagonal secundária, trocando o sinal do produto encontrado e juntamos todos os termos, resolvendo as adições e subtrações.");
             break;
 
         case "4x4":
