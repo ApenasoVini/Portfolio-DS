@@ -1,0 +1,65 @@
+function numeros(input) {
+    return /^\d+$/.test(input);
+}
+
+function det() {
+    do {
+
+        var ordem = prompt("Qual é a ordem de sua matriz?\n1x1\n2x2\n3x3\n4x4");
+
+    } while (ordem == ' ' && ordem != "1x1" && ordem != "2x2" && ordem != "3x3" && ordem != "4x4" && ordem != "1" && ordem != "2" && ordem != "3" && ordem != "4");
+
+
+    switch (ordem) {
+
+        case "1x1":
+        case "1":
+
+            do {
+                var a11 = prompt("Qual é o elemento da matriz?");
+            } while (!numeros(a11) || a11 == " ");
+            alert(a11 + "(Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo");
+            break;
+
+        case "2x2":
+        case "2":
+
+            do {
+                var a11 = prompt("Qual é o elemento a11 da matriz?");
+                var a12 = prompt("Qual é o elemento a12 da matriz?");
+                var a21 = prompt("Qual é o elemento a21 da matriz?");
+                var a22 = prompt("Qual é o elemento a22 da matriz?");
+
+            } while (!numeros(a11) || a11 == " " || !numeros(a12) || a12 == " " || !numeros(a21) || a21 == " " || !numeros(a22) || a22 == " ");
+
+            determinante = (a11 * a22) - (a12 * a21);
+
+            alert(determinante + "(Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária");
+            break;
+
+        case "3x3":
+        case "3":
+
+            do {
+                var a11 = prompt("Qual é o elemento a11 da matriz?");
+                var a12 = prompt("Qual é o elemento a12 da matriz?");
+                var a13 = prompt("Qual é o elemento a13 da matriz?");
+                var a21 = prompt("Qual é o elemento a21 da matriz?");
+                var a22 = prompt("Qual é o elemento a22 da matriz?");
+                var a23 = prompt("Qual é o elemento a23 da matriz?");
+                var a31 = prompt("Qual é o elemento a31 da matriz?");
+                var a32 = prompt("Qual é o elemento a32 da matriz?");
+                var a33 = prompt("Qual é o elemento a33 da matriz?");
+
+            } while (!numeros(a33) || a33 == " " || !numeros(a32) || a32 == " " || !numeros(a31) || a31 == " " || !numeros(a23) || a23 == " " || !numeros(a11) || a11 == " " || !numeros(a12) || a12 == " " || !numeros(a21) || a21 == " " || !numeros(a22) || a22 == " " || !numeros(a13) || a13 == " ");
+
+            determinante = (a11 * a22 * a33 + (a12 * a23 * a31) + (a13 * a21 * a32)) - (a12 * a21);
+
+            alert(determinante + "(Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária");
+            break;
+
+        case "4x4":
+        case "4":
+    }
+}
+det();
