@@ -14,7 +14,7 @@ function det() {
             do {
                 var a11 = prompt("Qual é o elemento da matriz?");
             } while (a11 == " ");
-            alert(a11 + "(Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo.)");
+            alert(a11 + " (Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo.)");
             break;
 
         case "2x2":
