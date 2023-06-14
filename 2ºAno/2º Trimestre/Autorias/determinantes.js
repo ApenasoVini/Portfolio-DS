@@ -1,7 +1,3 @@
-function numeros(input) {
-    return /^\d+$/.test(input);
-}
-
 function det() {
     do {
 
