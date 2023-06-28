@@ -1,9 +1,9 @@
 function det() {
     do {
 
-        var ordem = prompt("Qual é a ordem de sua matriz?\n1x1\n2x2\n3x3\n4x4");
+        var ordem = prompt("Qual é a ordem de sua matriz?\n1x1\n2x2\n3x3");
 
-    } while (ordem != "1x1" && ordem != "2x2" && ordem != "3x3" && ordem != "4x4" && ordem != "1" && ordem != "2" && ordem != "3" && ordem != "4");
+    } while (ordem != "1x1" && ordem != "2x2" && ordem != "3x3" && ordem != "1" && ordem != "2" && ordem != "3");
 
 
     switch (ordem) {
@@ -53,10 +53,6 @@ function det() {
 
             alert(determinante + " (Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos das diagonais principais e secundárias, juntamos todos os termos, resolvendo as adições e subtrações.)");
             break;
-
-        case "4x4":
-        case "4":
-
     }
 }
 
