@@ -12,8 +12,19 @@ body {
 /* id=# class=. */
 
 #title {
-    font-family: Georgia;
+  font-family: sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topline {
+    width: 80%;
+    margin-top: 2%;
+  }
 
 .imgs {
     width: 15%;
