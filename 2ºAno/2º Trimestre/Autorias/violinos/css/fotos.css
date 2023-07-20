@@ -27,6 +27,29 @@ body {
   }
 
 .imgs {
-    width: 15%;
+    border: 1px solid gray;
 }
 
+#black {
+    width: 20.8%;
+}
+
+#defaultOne {
+    width: 20%;
+}
+
+#defaultTwo {
+    width: 20%;
+}
+
+#eletric {
+    width: 20%;
+}
+
+#white {
+    width: 20%;
+}
+
+#blue {
+    width: 20%;
+}
