@@ -39,8 +39,7 @@ main {
 }
 
 .image img {
-  width: 150px;
-  height: 150px;
+    width: 10vw;
 }
 
 .image p {
