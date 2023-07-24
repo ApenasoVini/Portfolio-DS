@@ -42,11 +42,11 @@ main {
     width: 10vw;
 }
 
-.image p {
-  margin-top: 10px; 
-  text-align: center;
-}
-
 .image:hover {
   transform: scale(1.2);
+}
+
+.textbox {
+  margin-left: 90px;
+  margin-right: 90px;
 }
