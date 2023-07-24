@@ -43,7 +43,8 @@ main {
 }
 
 .image p {
-  margin-top: 10px;
+  margin-top: 10px; 
+  text-align: center;
 }
 
 .image:hover {
