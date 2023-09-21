@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #007bff; 
+    color: #000000; 
 }
 
 input {
@@ -28,7 +28,7 @@ input {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #35ce35;
     color: #fff;
     border: none;
     padding: 10px 20px;
