@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 142%;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.cap {
+    margin-left: 17%;
+    margin-top: -133%;
+}
+
+h2 {
+    color: darkgreen;
+    font-weight: bold;
+    margin-left: 3vh;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 15;
+    direction: ltr;
+    letter-spacing: .2vh;
+    word-spacing: .5vh;
+    text-align: justify;
+    margin-left: 2vh;
+    margin-right: 3vh;
+    margin-bottom: 3vh;
+    text-indent: 8vh;
+}
+
+nav.container {
+    display: flex;
+}
+
+nav.menu-lateral {
+    width: 30vh;
+    height: 200%;
+    background-color: darkgreen;
+    padding: 4vh 0 4vh 1%;
+    box-shadow: 0.8vh 0 0 black;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+ul {
+    height: 200vh;
+    list-style-type: none;
+}
+
+ul li.item-capitulo {
+    transition: .3s;
+}
+
+ul li.item-capitulo:hover {
+    width: 30vh;
+    background-color: black;
+}
+
+ul li.item-capitulo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1vh 4%;
+    display: flex;
+    margin-bottom: 1vh;
+    line-height: 4.5vh;
+}
+
+ul li.item-capitulo a .txt-link {
+    margin-left: 3vh;
+    transition: .7s;
+    opacity: 1;
+}
+
+
+ul li.item-capitulo a .icon>i {
+    font-size: 3vh;
+    margin-left: 2vh;
+}
+
+#menu {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 12%;
+    font-size: x-large;
+}
