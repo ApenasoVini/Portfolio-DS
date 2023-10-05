@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📂 Portfolio:
+# 📂 Portfólio:
 
 #### Este repositório é direcionado à construção do Portfólio Técnico do Ensino Médio 
 
