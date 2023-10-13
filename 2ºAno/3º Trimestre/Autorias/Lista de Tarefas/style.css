@@ -16,15 +16,15 @@ body {
 
 h1 {
     text-align: center;
-    color: #000000; 
+    color: #000000;
 }
 
 input {
     width: 95%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 button {
@@ -33,7 +33,7 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 ul {
@@ -58,5 +58,5 @@ li button {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    border-radius: 5px; 
+    border-radius: 5px;
 }

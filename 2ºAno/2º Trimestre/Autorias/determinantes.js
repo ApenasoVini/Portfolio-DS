@@ -23,7 +23,7 @@ function det() {
       determinante = Number(a11);
       alert(
         determinante +
-          " (Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo.)"
+        " (Lembre-se: em uma matriz de apenas 1 elemento, seu determinante será o valor do mesmo.)"
       );
       break;
 
@@ -44,7 +44,7 @@ function det() {
       determinante = a11 * a22 - a12 * a21;
       alert(
         determinante +
-          " (Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária)"
+        " (Lembre-se: em uma matriz 2x2, seu determinante será o produto da diagonal principal subtraído pela diagonal secundária)"
       );
       break;
 
@@ -82,7 +82,7 @@ function det() {
 
       alert(
         determinante +
-          " (Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos das diagonais principais e secundárias, juntamos todos os termos, resolvendo as adições e subtrações.)"
+        " (Lembre-se: em uma matriz 3x3, repetimos ao lado da matriz as duas primeiras colunas, multiplicamos os elementos das diagonais principais e secundárias, juntamos todos os termos, resolvendo as adições e subtrações.)"
       );
       break;
   }
