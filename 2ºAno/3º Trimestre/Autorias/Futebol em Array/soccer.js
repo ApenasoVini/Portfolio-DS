@@ -3,32 +3,20 @@ var selecao = [];
 var timeElement = document.getElementById('time');
 var taticas
 
-// Parâmetros para aceitar apenas letras (com acentos)
 function letras(input) {
     return /^\p{L}+$/u.test(input);
 }
 
-// Parâmetros para aceitar apenas letras (sem acentos)
-// function letras(input) {
-//     return /^[a-zA-Z]+$/.test(input);
-//   }
-
-// MESMO PARÂMETRO PARA NÚMEROS:
-//   function numeros(input) {
-//     return /^\d+$/.test(input);
-//   }
-
-
-function campo() {
+function escalar() {
 
     do {
-    alert("Escolha a tática que deseja utilizar:")
-    taticas = prompt("A -> (4-3-3)\nB -> (3-5-2)\nC -> (4-4-2)\nD- > (4-5-1)\nSair")
-        }    while (taticas !== "Sair" && taticas !== "sair" && taticas !== "A" && taticas !== "a" && taticas !== "B" && taticas !== "b" && taticas !== "C" && taticas !== "c" && taticas !== "D" && taticas !== "d") 
-        
+        alert("Escolha a tática que deseja utilizar:")
+        taticas = prompt("A -> (4-3-3)\nB -> (3-5-2)\nC -> (4-4-2)\nD- > (4-5-1)\nSair")
+    } while (taticas !== "Sair" && taticas !== "sair" && taticas !== "A" && taticas !== "a" && taticas !== "B" && taticas !== "b" && taticas !== "C" && taticas !== "c" && taticas !== "D" && taticas !== "d")
+
     switch (taticas) {
         case "A":
-        case"a":
+        case "a":
 
             goleiro = prompt("Digite o nome do goleiro");
             zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
@@ -49,8 +37,8 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
 
-            case "B":
-            case"b":
+        case "B":
+        case "b":
 
             goleiro = prompt("Digite o nome do goleiro");
             zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
@@ -71,8 +59,8 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
 
-            case "C":
-            case"c":
+        case "C":
+        case "c":
 
             goleiro = prompt("Digite o nome do goleiro");
             zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
@@ -93,8 +81,8 @@ function campo() {
             timeElement.innerHTML = selecao.join(' ');
             break;
 
-            case "D":
-            case"d":
+        case "D":
+        case "d":
 
             goleiro = prompt("Digite o nome do goleiro");
             zagueiro1 = prompt("Digite o nome do primeiro zagueiro");
@@ -121,5 +109,4 @@ function limpar() {
     timeElement.innerHTML = '';
 }
 
-// Parâmetros sendo usados
 letras(input)
