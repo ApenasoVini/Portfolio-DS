@@ -1,11 +1,13 @@
 var goleiro, zagueiro1, zagueiro3, zagueiro2, latdireito, latesquerdo, volante, alaE, alaD, meia3, meia1, meia2, pontaD, pontaE, atacante1, atacante2, centroAvante;
 var selecao = [];
-var timeElement = document.getElementById('time');
+var timeElement = document.createElement("p");
 var taticas
 
 function letras(input) {
     return /^\p{L}+$/u.test(input);
 }
+
+divtime
 
 function escalar() {
 

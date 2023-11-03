@@ -7,51 +7,45 @@
 body {
     background-image: url("./background.svg");
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
-header h1 {
-    text-align: center;
-    margin-top: 20px;
-    font-family: Arial;
-}
-
-.btn {
-    font-family: system-ui;
-    font-size: medium;
-    background: transparent;
-    text-align: center;
-    width: 15vw;
+header {
+    width: 100%;
     height: 10vh;
-    border: solid 1px black;
-}
-
-.btn:hover {
-    font-family: system-ui;
-    font-size: medium;
-    background-color: black;
-    text-align: center;
-    width: 15vw;
-    height: 10vh;
-    border: solid 1px black;
-    color: white ;
-}
-
-#divtime {
+    padding: 10px;
+    position: fixed;
+    background-color: transparent;
     text-align: center;
 }
 
-#estadio {
-    width: 20%;
-    height: 20%;
-    margin: auto;
-    z-index: -1;
+hr {
+    margin-top: 5px;
 }
 
-#time {
-    font-family: system-ui;
-    font-size: large;
-    color: black;
-    margin-top: -27%;
-    font-size:larger;
+.container {
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center
 }
 
+.container button {
+    border-radius: 5px;
+    width: 13vw;
+    height: 8vh;
+    font-size: larger;
+    background-color: transparent;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.container button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container img {
+    border-radius: 5px;
+    border: 15px groove gray;
+}
