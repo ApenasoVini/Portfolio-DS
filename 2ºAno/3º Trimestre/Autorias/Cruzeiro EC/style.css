@@ -2,10 +2,35 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-principal:#0011ff;
+    --cor-secundaria:#ffffff; 
+    --cor-apoio: #000000;
+  }
+  
+
+
 body {
     margin: 0;
     font-family: sans-serif;
+    background-image: url('./background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--cor-secundaria);
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+    pointer-events: none;
+  }
+  
 
 .sidebar {
     position: fixed;
@@ -16,8 +41,9 @@ body {
     width: 240px;
     height: 100%;
     padding: 40px 10px 30px 10px;
-    border-right: 1px solid blue;
+    border-right: 1px solid var(--cor-principal);
     transition: all 0.35s;
+    background-color: rgb(0, 17, 255, 0.2);
 }
 
 .sidebar-header {
@@ -85,6 +111,108 @@ body {
     margin-left: 250px;
     margin-right: 6px;
     overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    color: inherit;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+    background-color: rgb(0, 17, 255, 0.5);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+.foooter-socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.foooter-socials .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: inherit;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.foooter-socials .footer-link:hover {
+    opacity: 0.8;
+}
+
+.foooter-socials .footer-link i {
+    font-size: 1.25rem;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#github {
+    background: #000000;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-email p {
+   color: inherit;
+}
+
+#input-email {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-principal);
+    border-radius: 4px;
+}
+
+#input-email input {
+    all:unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-email button {
+    background-color: var(--cor-secundaria);
+    border: none;
+    color: inherit;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input-email button:hover {
+    opacity: 0.8;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    font-weight: 100;
 }
 
 /*Responsivo*/
