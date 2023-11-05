@@ -3,11 +3,11 @@
 }
 
 :root {
-    --cor-principal:#0011ff;
-    --cor-secundaria:#ffffff; 
+    --cor-principal: #0011ff;
+    --cor-secundaria: #ffffff;
     --cor-apoio: #000000;
-  }
-  
+}
+
 
 
 body {
@@ -27,11 +27,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
     pointer-events: none;
-  }
-  
+}
+
 
 .sidebar {
     position: fixed;
@@ -111,20 +111,36 @@ body::before {
 .main {
     margin-left: 17%;
     margin-right: 6px;
+}
+
+iframe {
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: rgb(0, 0, 255, 0.7);
+    color: var(--cor-secundaria);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+iframe.loaded {
+    display: block; 
+    opacity: 1;
 }
 
 /*Responsivo*/
 @media (width < 920px) {
-    .sidebar{
-       width: 72px; 
+    .sidebar {
+        width: 72px;
     }
 
-    .sidebar buttton > span {
+    .sidebar buttton>span {
         width: 50px;
     }
 
-    .sidebar button > span > span {
+    .sidebar button>span>span {
         opacity: 0;
         visibility: hidden;
     }
@@ -133,4 +149,4 @@ body::before {
         margin-left: 90px;
         transition: margin 0.4s;
     }
-} 
+}
