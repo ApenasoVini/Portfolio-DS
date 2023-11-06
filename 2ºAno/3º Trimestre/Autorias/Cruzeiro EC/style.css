@@ -8,8 +8,6 @@
     --cor-apoio: #000000;
 }
 
-
-
 body {
     margin: 0;
     font-family: sans-serif;
@@ -70,6 +68,11 @@ body::before {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar button {
