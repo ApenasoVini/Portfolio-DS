@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url('./background.svg');
+    background-image: url('./backgrounduniformes.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -114,6 +114,14 @@ body::before {
 .main {
     margin-left: 17%;
     margin-right: 6px;
+}
+
+.main #main-content {
+
+}
+
+.main #main-content .uniformes-img{
+    width: 15%;
 }
 
 /*Responsivo*/
