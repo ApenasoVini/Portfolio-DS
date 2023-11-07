@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url('./backgrounduniformes.svg');
+    background-image: url('./background.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,6 +29,7 @@ body::before {
     z-index: 1;
     pointer-events: none;
 }
+
 
 .sidebar {
     position: fixed;
@@ -131,29 +132,22 @@ body::before {
     width: 100%;
 }
 
-#main-content p {
+#main-content section p {
     margin-top: 10px;
     font-weight: bolder;
-    background-color: var(--cor-apoio);
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
     border-radius: 5px;
     padding: 10px;
 }
 
-#palestra {
-    color: #008000;
-}
-
-.celeste {
-    color: var(--cor-principal);
-}
-
-/* Responsivo */
-@media (max-width: 920px) {
+/*Responsivo*/
+@media (width < 920px) {
     .sidebar {
         width: 72px;
     }
 
-    .sidebar button>span {
+    .sidebar buttton>span {
         width: 50px;
     }
 
