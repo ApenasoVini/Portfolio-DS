@@ -116,21 +116,46 @@ body::before {
     margin-right: 6px;
 }
 
-.main #main-content {
-
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.main #main-content .uniformes-img{
-    width: 15%;
+#main-content figure {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    
 }
 
-/*Responsivo*/
-@media (width < 920px) {
+#main-content .uniformes-img {
+    width: 100%;
+}
+
+#main-content p {
+    margin-top: 10px;
+    font-weight: bolder;
+    background-color: var(--cor-apoio);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#palestra {
+    color: #008000;
+}
+
+.celeste {
+    color: var(--cor-principal);
+}
+
+/* Responsivo */
+@media (max-width: 920px) {
     .sidebar {
         width: 72px;
     }
 
-    .sidebar buttton>span {
+    .sidebar button>span {
         width: 50px;
     }
 
