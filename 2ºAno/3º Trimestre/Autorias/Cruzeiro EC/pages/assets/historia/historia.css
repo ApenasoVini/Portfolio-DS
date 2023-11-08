@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url('./background.svg');
+    background-image: url('./backgroundhistoria.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -122,23 +122,20 @@ body::before {
     justify-content: space-between;
 }
 
-#main-content figure {
-    flex: 1;
-    text-align: center;
-    margin: 10px;  
-}
-
-#main-content .uniformes-img {
-    width: 100%;
+#main-content .historia img {
+    min-width: 25vw;
+    max-height: 60vh;
 }
 
 #main-content section p {
     margin-top: 10px;
     font-weight: bolder;
-    background-color: var(--cor-principal);
+    background-color: rgb(0, 0, 255, 0.7);
     color: var(--cor-secundaria);
     border-radius: 5px;
     padding: 10px;
+    width: 75%;
+    font-weight: 100;
 }
 
 /*Responsivo*/

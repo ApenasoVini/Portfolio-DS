@@ -114,6 +114,27 @@ body::before {
 .main {
     margin-left: 17%;
     margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main #main-content {
+    height: 40vh;
+    background-color: rgb(0, 0, 255, 0.7);
+    width: 50vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main #main-content h3{
+    text-align: center;
+}
+
+.main #main-content #slogan{
+    margin-top: 30px;
+    text-align: center;
 }
 
 /*Responsivo*/
