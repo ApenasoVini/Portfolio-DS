@@ -153,6 +153,11 @@ body::before {
         visibility: hidden;
     }
 
+    .sidebar button:hover>span {
+        background-color: rgb(0, 0, 255, 0.3);
+        width: 50px;
+    }
+
     .main {
         margin-left: 90px;
         transition: margin 0.4s;
