@@ -12,6 +12,21 @@ body {
     background-color: #d3d3d3;
 }
 
+.sidebar-hidden {
+    transform: translateX(-100%);
+}
+
+#open-sidebar {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .sidebar {
     width: 13%;
     height: 100%;
@@ -20,12 +35,14 @@ body {
     box-shadow: 0.4vh 0 0 black;
     position: fixed;
     overflow: auto;
+    transition: transform 0.3s ease;
 }
 
 .header-sidebar {
     display: flex;
     justify-content: center;
     color: #fff;
+    cursor: pointer;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -41,22 +58,18 @@ ul {
     padding: 0;
 }
 
-ul li {
-    padding: 10%;
-    border-bottom: 1px solid transparent;
-}
-
 ul button {
-    height: 80%;
     width: 100%;
     border: none;
     background: none;
     cursor: pointer;
 }
 
-.link {
-    cursor: pointer;
+ul button li {
+    padding: 10%;
+    border-bottom: 1px solid transparent;
     font-size: 1.2rem;
+    color: #fff;
 }
 
 main {
