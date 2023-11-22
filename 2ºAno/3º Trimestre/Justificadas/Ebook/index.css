@@ -63,6 +63,11 @@ ul button {
     border: none;
     background: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+ul button:hover {
+    background-color: #004e00;
 }
 
 ul button li {
@@ -73,5 +78,9 @@ ul button li {
 }
 
 main {
-    margin-left: 1rem;
+    margin-left: 0;
+}
+
+.main-right {
+    margin-left: calc(5rem + 13%); 
 }
