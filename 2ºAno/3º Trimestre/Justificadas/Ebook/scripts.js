@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     open.addEventListener('click', function () {
         sidebar.classList.toggle('sidebar-hidden');
-        main.classList.toggle('main-right');
+        main.classList.toggle('main-total');
     });
 
     icon.addEventListener('click', function () {
         sidebar.classList.toggle('sidebar-hidden');
-        main.classList.toggle('main-right');
+        main.classList.toggle('main-total');
     });
 });
