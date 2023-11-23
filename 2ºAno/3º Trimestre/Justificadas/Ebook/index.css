@@ -137,6 +137,7 @@ main .imgs {
     margin-bottom: 1rem;
     margin-right: 0.8rem;
     transition: ease 0.4s;
+    border-radius: 2%;
 }
 
 main .imgs:hover {
