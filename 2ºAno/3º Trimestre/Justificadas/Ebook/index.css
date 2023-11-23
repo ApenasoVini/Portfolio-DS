@@ -25,6 +25,11 @@ body {
     color: #000;
     font-size: 2rem;
     cursor: pointer;
+    transition: ease 0.4s;
+}
+
+#open-sidebar:hover {
+    transform: scale(1.1);
 }
 
 .sidebar {
@@ -46,7 +51,12 @@ body {
 }
 
 #menu-icon {
-    font-size: 2rem
+    font-size: 2rem;
+    transition: ease 0.4s;
+}
+
+#menu-icon:hover {
+    transform: scale(1.1);
 }
 
 .sidebar::-webkit-scrollbar {
@@ -93,9 +103,26 @@ ul button li {
     width: 92%;
 }
 
+main {
+    transition: ease-out 0.4s;
+}
+
 main .sinopse-container section {
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+main .sinopse-container section h2 {
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    color: #004e00;
+}
+
+main .sinopse-container section p {
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px;
 }
 
 main .sinopse-container .imgs-container {
@@ -107,10 +134,10 @@ main .sinopse-container .imgs-container {
 main .imgs {
     width: 25%;
     margin-bottom: 1rem;
+    margin-right: 0.8rem;
+    transition: ease 0.4s;
 }
 
-main .paragrafo {
-    text-align: justify;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1.5px;
+main .imgs:hover {
+    transform: scale(0.95);
 }
