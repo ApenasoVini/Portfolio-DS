@@ -72,23 +72,21 @@ ul {
     padding: 0;
 }
 
-ul button {
-    width: 100%;
-    border: none;
-    background: none;
+ul a {
     cursor: pointer;
-    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
 }
 
-ul button:hover {
-    background-color: #004e00;
-}
-
-ul button li {
+ul a li {
     padding: 10%;
     border-bottom: 1px solid transparent;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #fff;
+}
+
+ul a li:hover {
+    background-color: #004e00;
 }
 
 .main-content {
