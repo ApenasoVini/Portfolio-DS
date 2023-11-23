@@ -45,6 +45,10 @@ body {
     cursor: pointer;
 }
 
+#menu-icon {
+    font-size: 2rem
+}
+
 .sidebar::-webkit-scrollbar {
     width: 1vw;
 }
@@ -77,10 +81,36 @@ ul button li {
     color: #fff;
 }
 
-main {
-    margin-left: 0;
+.main-content {
+    display: flex;
+    width: 82%;
+    margin-left: 13rem;
 }
 
-.main-right {
-    margin-left: calc(5rem + 13%); 
+.main-total {
+    margin-left: 5rem;
+    display: flex;
+    width: 92%;
+}
+
+main .sinopse-container section {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+main .sinopse-container .imgs-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+main .imgs {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+main .paragrafo {
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px;
 }
