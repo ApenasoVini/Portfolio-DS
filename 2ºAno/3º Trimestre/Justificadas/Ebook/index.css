@@ -117,6 +117,7 @@ main .sinopse-container section h2 {
     letter-spacing: 1.5px;
     font-weight: 800;
     color: #004e00;
+    text-transform: uppercase;
 }
 
 main .sinopse-container section p {
