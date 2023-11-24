@@ -14,5 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     icon.addEventListener('click', function () {
         sidebar.classList.toggle('sidebar-hidden');
         main.classList.toggle('main-total');
+        open.style.visibility  = 'visible';
+        open.style.pointerEvents = 'all';
     });
 });
