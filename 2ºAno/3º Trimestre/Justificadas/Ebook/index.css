@@ -12,6 +12,11 @@ body {
     background-color: #d3d3d3;
 }
 
+body::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+
 .sidebar-hidden {
     transform: translateX(-100%);
 }
