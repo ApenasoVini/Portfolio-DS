@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidebar {
-    width: 13%;
+    min-width: 13%;
     height: 100%;
     background-color: #006400;
     padding: 2vh;
@@ -142,7 +142,7 @@ main .sinopse-container .imgs-container {
 }
 
 main .imgs {
-    width: 27%;
+    max-width: 27%;
     margin-bottom: 1rem;
     margin-right: 0.8rem;
     transition: ease 0.4s;
@@ -152,3 +152,39 @@ main .imgs {
 main .imgs:hover {
     transform: scale(0.95);
 }
+
+@media only screen and (max-width: 784px) {
+    .main-content {
+        width: 70%;
+        margin-left: 12rem;
+    }
+    
+    .main-total {
+        width: 80%;
+        margin-left: 5rem;
+    }
+  }
+
+  @media only screen and (max-width: 1115px) {
+    .main-content {
+        width: 70%;
+        margin-left: 12rem;
+    }
+    
+    .main-total {
+        width: 80%;
+        margin-left: 5rem;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    .main-content {
+        width: 60%;
+        margin-left: 12rem;
+    }
+    
+    .main-total {
+        width: 70%;
+        margin-left: 5rem;
+    }
+  }
