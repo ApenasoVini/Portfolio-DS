@@ -117,8 +117,8 @@ main {
 }
 
 main .sinopse-container section {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 main .sinopse-container section h2 {
@@ -142,7 +142,7 @@ main .sinopse-container .imgs-container {
 }
 
 main .imgs {
-    width: 30%;
+    width: 27%;
     margin-bottom: 1rem;
     margin-right: 0.8rem;
     transition: ease 0.4s;
