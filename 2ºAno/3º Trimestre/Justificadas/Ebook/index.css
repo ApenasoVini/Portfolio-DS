@@ -18,18 +18,20 @@ body {
 
 #open-sidebar {
     position: fixed;
-    top: 2%;
-    left: 2%;
-    background: none;
-    border: none;
+    top: 1.5%;
+    left: 1.5%;
+    border-radius: 50%;
+    border: 0;
+    background: 0;
     color: #000;
     font-size: 2rem;
     cursor: pointer;
     transition: ease 0.4s;
+    padding: 5px;
 }
 
 #open-sidebar:hover {
-    transform: scale(1.1);
+    background-color: #b3b3b3;
 }
 
 .sidebar {
@@ -53,10 +55,14 @@ body {
 #menu-icon {
     font-size: 2rem;
     transition: ease 0.4s;
+    border-radius: 50%;
+    border: 0;
+    margin-bottom: 0.25rem;
+    padding: 5px;
 }
 
 #menu-icon:hover {
-    transform: scale(1.1);
+    background-color: #004e00;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -102,7 +108,7 @@ ul a li:hover {
 }
 
 main {
-    transition: ease-out 0.4s;
+    transition: all 0.4s;
 }
 
 main .sinopse-container section {
