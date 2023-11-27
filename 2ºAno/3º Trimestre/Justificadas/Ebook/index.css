@@ -7,7 +7,6 @@
 }
 
 body {
-    height: 100%;
     font-family: 'Montserrat';
     background-color: #d3d3d3;
 }
@@ -16,18 +15,15 @@ body::-webkit-scrollbar-thumb {
     background-color: #000;
 }
 
-
 .sidebar-hidden {
     transform: translateX(-100%);
 }
 
 #open-sidebar {
     position: fixed;
-    top: 1.5%;
+    top: 5.5%;
     left: 1.5%;
     border-radius: 50%;
-    border: 0;
-    background: 0;
     color: #000;
     font-size: 2rem;
     cursor: pointer;
