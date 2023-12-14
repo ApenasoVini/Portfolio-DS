@@ -4,15 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Montserrat';
     background-color: #d3d3d3;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #000;
 }
 
 .sidebar-hidden {
@@ -154,33 +151,33 @@ main .imgs:hover {
         width: 70%;
         margin-left: 12rem;
     }
-    
+
     .main-total {
         width: 80%;
         margin-left: 5rem;
     }
-  }
+}
 
-  @media only screen and (max-width: 1115px) {
+@media only screen and (max-width: 1115px) {
     .main-content {
         width: 70%;
         margin-left: 12rem;
     }
-    
+
     .main-total {
         width: 80%;
         margin-left: 5rem;
     }
-  }
+}
 
-  @media only screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
     .main-content {
         width: 60%;
         margin-left: 12rem;
     }
-    
+
     .main-total {
         width: 70%;
         margin-left: 5rem;
     }
-  }
+}
