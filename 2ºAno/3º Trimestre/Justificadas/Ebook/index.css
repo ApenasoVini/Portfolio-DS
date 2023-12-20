@@ -18,7 +18,7 @@ body {
 
 #open-sidebar {
     position: fixed;
-    top: 5.5%;
+    top: 3%;
     left: 1.5%;
     border-radius: 50%;
     color: #000;
@@ -46,12 +46,13 @@ body {
 .header-sidebar {
     display: flex;
     justify-content: center;
-    color: #fff;
+    align-items: center;
     cursor: pointer;
 }
 
-#menu-icon {
+.header-sidebar span {
     font-size: 2rem;
+    color: #fff;
     transition: ease 0.4s;
     border-radius: 50%;
     border: 0;
@@ -59,7 +60,7 @@ body {
     padding: 5px;
 }
 
-#menu-icon:hover {
+.header-sidebar span:hover {
     background-color: #004e00;
 }
 
@@ -79,14 +80,13 @@ ul a {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-    text-align: justify;
 }
 
 ul a li {
     padding: 10%;
-    border-bottom: 1px solid transparent;
     font-size: 1.15rem;
     color: #fff;
+    border-radius: 50px;
 }
 
 ul a li:hover {
@@ -95,27 +95,23 @@ ul a li:hover {
 
 .main-content {
     display: flex;
-    width: 82%;
+    width: 80%;
     margin-left: 13rem;
 }
 
 .main-total {
-    margin-left: 5rem;
+    margin: 0 0 0 5rem;
     display: flex;
-    width: 92%;
-}
-
-main {
-    transition: all 0.4s;
+    width: 90%;
 }
 
 main .sinopse-container section {
     margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
+    margin-top: 1.55rem;
 }
 
 main .sinopse-container section h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     letter-spacing: 1.5px;
     font-weight: 800;
     color: #004e00;
@@ -133,15 +129,14 @@ main .sinopse-container .imgs-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 main .imgs {
-    max-width: 27%;
-    margin-bottom: 1rem;
-    margin-right: 0.8rem;
+    max-width: 30%;
     transition: ease 0.4s;
     border-radius: 2%;
-}
+    box-shadow: 5px 5px 10px #888888;}
 
 main .imgs:hover {
     transform: scale(0.95);
