@@ -1,21 +1,39 @@
-function gerarSenha() {
-    const caracteres = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-        'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
-        'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-        'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '@', '#', '$',
-        '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '<', '>', '?'];
+const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_-+=<>?';
+const removerNumeros = str => str.replace(/\d/g, '');
+const removerLetrasMaiusculas = str => str.replace(/[A-Z]/g, '');
+const removerCaracteresEspeciais = str => str.replace(/[^a-zA-Z0-9]/g, '');
 
-    var tamanho = prompt("Digite a quantidade de caracteres na senha: ");
+const gerarSenha = () => {
+    const tamanho = prompt("Digite a quantidade de caracteres na senha: ");
+
     if (isNaN(tamanho) || tamanho <= 0) {
         console.log("Por favor, digite um número válido para o tamanho da senha.");
         return;
     }
-    var senha = '';
-    for (let i = 0; i < tamanho; i++) {
-        const indice = Math.floor(Math.random() * caracteres.length);
-        senha += caracteres[indice];
+
+    const terNumeros = prompt("A senha deve ter números? (s/n)");
+    const terMaiusculas = prompt("A senha deve ter letras maiúsculas? (s/n)");
+    const terCaracteres = prompt("A senha deve ter caracteres especiais? (s/n)");
+    let caracteresValidos = caracteres;
+
+    if (terNumeros === "n") {
+        caracteresValidos = removerNumeros(caracteresValidos);
     }
+
+    if (terMaiusculas === "n") {
+        caracteresValidos = removerLetrasMaiusculas(caracteresValidos);
+    }
+
+    if (terCaracteres === "n") {
+        caracteresValidos = removerCaracteresEspeciais(caracteresValidos);
+    }
+
+    let senha = '';
+    for (let i = 0; i < tamanho; i++) {
+        const indice = Math.floor(Math.random() * caracteresValidos.length);
+        senha += caracteresValidos[indice];
+    }
+
     console.log(senha);
 }
 
