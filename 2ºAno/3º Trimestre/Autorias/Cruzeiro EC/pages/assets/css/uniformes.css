@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url('./backgroundtitulos.svg');
+    background-image: url('../img/backgrounduniformes.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -124,13 +124,11 @@ body::before {
 #main-content figure {
     flex: 1;
     text-align: center;
-    margin: 10px;
-    
+    margin: 10px;  
 }
 
-#main-content .titulos-img {
-    min-width: 15vw;
-    max-height: 30vh;
+#main-content .uniformes-img {
+    width: 100%;
 }
 
 #main-content p {
@@ -139,6 +137,10 @@ body::before {
     background-color: var(--cor-apoio);
     border-radius: 5px;
     padding: 10px;
+}
+
+#palestra {
+    color: #008000;
 }
 
 .celeste {
