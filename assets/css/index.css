@@ -2,6 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --corUm: #9D5C45;
+    --corDois: #89523B;
+    --corTres: #DC9C8B;
+    --lightOne: #FFF;
+    --lightTwo: #CCC;
+    --lightThree: #8D8D8D;
+    --darkOne: #282729;
+    --darkTwo: #051119;
+    --darkThree: #191815;
+
 }
 
 body {
