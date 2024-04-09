@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lightTwo);
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 300;
+    font-style: normal;
+}
+
+p {
+    font-weight: 100;
+    font-style: normal;
+}

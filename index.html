@@ -5,14 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
-
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Portfólio</title>
 </head>
 
-<body>
-    <header class="header-index">
-        
+<body class="index-page">
+    <header class='header-index'>
+        <nav>
+            <ul>
+                <li>
+                    <h1>Título da Página</h1>
+                </li>
+                <li><a href='#'>Tópico</a></li>
+                <li><a href='#'>Tópico</a></li>
+                <li><a href='#'>Tópico</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="module parallax parallax-1">
@@ -34,5 +48,20 @@
         </div>
     </main>
 </body>
+
+<script>
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScroll > lastScrollTop) {
+            document.getElementsByClassName("header-index").classList.add("hidden");
+        } else {
+            document.getElementsByClassName("header-index").classList.remove("hidden");
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, false);
+
+</script>
 
 </html>

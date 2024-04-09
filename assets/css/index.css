@@ -1,32 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
 :root {
-    --corUm: #9D5C45;
-    --corDois: #89523B;
-    --corTres: #DC9C8B;
     --lightOne: #FFF;
     --lightTwo: #CCC;
     --lightThree: #8D8D8D;
     --darkOne: #282729;
     --darkTwo: #051119;
     --darkThree: #191815;
-
 }
 
-body {
+.index-page {
     font-family: sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    height: 200vh;
 }
 
 .header-index {
     width: 100%;
-    margin: 0 auto;
+    transition: top 0.3s ease-in-out;
+    position: fixed;
+    background-color: var(--lightThree);
+    top: 0;
+    padding: 1%;
+}
+
+.header-index.hidden {
+    top: -6.25rem;
 }
 
 .container {
@@ -36,17 +34,8 @@ body {
     padding: 0 20px;
 }
 
-section.module p {
-    margin-bottom: 40px;
-}
-
 section.module:last-child {
     margin-bottom: 0;
-}
-
-section.module h2 {
-    margin-bottom: 40px;
-    font-size: 30px;
 }
 
 section.module.content {
@@ -58,7 +47,7 @@ section.module.parallax {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh !important;
+    height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -80,34 +69,10 @@ section.module.parallax:after {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
 }
 
-section.module.parallax-1 {
-    background-image: url("../img/homePage.jpg");
-}
-
 section.module.parallax h1 {
     color: #FFF;
     text-align: center;
     font-size: 78px;
     z-index: 50;
     text-transform: uppercase;
-}
-
-@media all and (max-width: 820px) {
-    section.module h2 {
-        font-size: 32px;
-    }
-
-    .module h2,
-    p {
-        padding: 0 8px;
-    }
-
-    .container {
-        margin: 0;
-        padding: 0;
-    }
-
-    section.module.parallax h1 {
-        font-size: 36px;
-    }
 }
