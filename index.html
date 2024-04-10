@@ -29,12 +29,12 @@
         </nav>
     </header>
 
-    <section class="module parallax parallax-1">
+    <section class="index-parallax">
         <h1>Portfólio</h1>
     </section>
 
-    <main class="module content">
-        <div class="container">
+    <main class="index-main">
+        <div>
             <h2>Qualquer texto aqui..</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
@@ -48,20 +48,5 @@
         </div>
     </main>
 </body>
-
-<script>
-    let lastScrollTop = 0;
-
-    window.addEventListener("scroll", function () {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        if (currentScroll > lastScrollTop) {
-            document.getElementsByClassName("header-index").classList.add("hidden");
-        } else {
-            document.getElementsByClassName("header-index").classList.remove("hidden");
-        }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    }, false);
-
-</script>
 
 </html>

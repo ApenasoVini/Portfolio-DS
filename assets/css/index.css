@@ -23,56 +23,27 @@
     padding: 1%;
 }
 
-.header-index.hidden {
-    top: -6.25rem;
-}
-
-.container {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-section.module:last-child {
-    margin-bottom: 0;
-}
-
-section.module.content {
-    padding: 40px 0;
-    background: #ece7d5;
-}
-
-section.module.parallax {
+.index-parallax {
+    background-image: url(../img/homepage.jpeg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-position: center;
 }
 
-section.module.parallax:after {
-    content: "";
-    height: 100%;
+.index-main {
+    padding: 40px 0;
+    background: var(--lightTwo);
+}
+
+.index-main div {
     width: 100%;
-    position: absolute;
-    z-index: 8;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-}
-
-section.module.parallax h1 {
-    color: #FFF;
-    text-align: center;
-    font-size: 78px;
-    z-index: 50;
-    text-transform: uppercase;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
