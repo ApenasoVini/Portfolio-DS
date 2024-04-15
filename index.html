@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Portfólio</title>
 </head>
@@ -84,18 +82,31 @@
     </main>
 
     <section id="sobre" class="index-section">
-        <ul class="accordion">
-            <li>
-                <img src="img1.jpg" />
-                <div>
-                    <span>
+        <span class="material-icons-outlined prev">navigate_before</span>
+        <div class="slideshow-container">
+            <div class="slide">
+                <div class="creator">
+                    <div>
                         <h2>Vinícius</h2>
                         <p>Criador</p>
-                    </span>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+            <div class="slide">
+                <h2>Slide 2</h2>
+                <p>Conteúdo do Slide 2</p>
+            </div>
+            <div class="slide">
+                <h2>Slide 3</h2>
+                <p>Conteúdo do Slide 3</p>
+            </div>
+        </div>
+        <span class="material-icons-outlined next">navigate_next</span>
+        <script src="./assets/js/slides.js"></script>
+    </section>
 
+    <!-- <section id="sobre" class="index-section">
+        
         <div class="skills">
             <h2>skills</h2>
             <span></span>
@@ -108,7 +119,7 @@
                 <img src="./assets/img/react.svg" alt="react logo">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer id="contato" class="index-footer">
         <div class="brand">
