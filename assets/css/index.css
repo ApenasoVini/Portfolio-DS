@@ -163,6 +163,22 @@
     justify-content: center;
 }
 
+.index-section>span {
+    font-family: 'Material Icons';
+    font-size: 3rem;
+    color: var(--darkOne);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .2s all;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.index-section>span:hover {
+    color: var(--hoverColor);
+}
+
 .slideshow-container {
     position: relative;
     max-width: 55rem;
@@ -186,7 +202,7 @@
     height: 35rem;
 }
 
-.slide.active>h2 {
+.slide.active h2 {
     text-transform: uppercase;
     border-bottom: 2px solid var(--darkTwo);
 }
@@ -284,50 +300,77 @@
     visibility: visible;
 }
 
-.index-section>span {
-    font-family: 'Material Icons';
-    font-size: 3rem;
-    color: var(--darkOne);
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    transition: .2s all;
-    border-radius: 50%;
-}
-
-.index-section>span:hover {
-    color: var(--hoverColor);
-}
-
-/*
-.skills {
+.creator {
+    width: 100%;
+    height: 100%;
     display: flex;
-    width: 50%;
     flex-direction: column;
+    padding: 3%;
 }
 
-.skills h2 {
+.creator .presentation {
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.creator .presentation img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 5px 8px 8px var(--darkOne);
+}
+
+.creator .presentation span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.creator .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.creator .skills ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.creator .skills ul li {
+    font-size: 1.5rem;
+}
+
+.creator .skills ul li span {
+    color: var(--hoverColor);
+    font-weight: bold;
+}
+
+.creator .skills ul button {
+    color: var(--lightOne);
+    background-color: var(--darkThree);
+    transition: ease .4s;
+    width: 65%;
+    height: 3rem;
+    border: 1px solid var(--darkThree);
+    cursor: pointer;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
-.skills span {
-    width: 5rem;
-    height: .1rem;
-    background-color: var(--darkTwo);
+.creator .skills ul button:hover {
+    color: var(--darkTwo);
+    background-color: transparent;
+    border: 1px solid var(--darkThree);
 }
-
-.skills div {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.skills div img {
-   width: 10rem;
-   height: 10rem;
-} */
 
 .index-footer {
     width: 100%;
