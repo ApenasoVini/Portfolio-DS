@@ -154,7 +154,7 @@
 }
 
 .index-section {
-    padding: 1%;
+    padding: 2%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -163,19 +163,17 @@
     justify-content: center;
 }
 
-.index-section>span {
-    font-family: 'Material Icons';
-    font-size: 3rem;
+.index-section>i {
+    font-size: 2rem;
     color: var(--darkOne);
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     transition: .2s all;
     user-select: none;
-    border-radius: 50%;
 }
 
-.index-section>span:hover {
+.index-section>i:hover {
     color: var(--hoverColor);
 }
 
@@ -349,7 +347,7 @@
     font-size: 1.5rem;
 }
 
-.creator .skills ul li span {
+.creator .skills ul li .blue {
     color: var(--hoverColor);
     font-weight: bold;
 }
@@ -370,6 +368,23 @@
     color: var(--darkTwo);
     background-color: transparent;
     border: 1px solid var(--darkThree);
+}
+
+.future {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.future div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .index-footer {
