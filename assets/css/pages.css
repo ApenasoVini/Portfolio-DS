@@ -80,6 +80,7 @@ main>i:hover {
 
 .slide.active span h2 {
     border-bottom: 2px solid var(--darkTwo);
+    width: max-content;
 }
 
 .slide.active span img {
