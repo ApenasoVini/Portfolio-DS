@@ -1,18 +1,3 @@
-:root {
-    --lightOne: #FFF;
-    --lightTwo: #F3F3F3;
-    --lightThree: #969696;
-    --darkOne: #282729AF;
-    --darkTwo: #000000;
-    --darkThree: #191815;
-    --hoverColor: #3939E7A9;
-}
-
-.index-page {
-    height: auto;
-    width: 100%;
-}
-
 .header-index {
     width: 100%;
     background-color: var(--lightTwo);
@@ -184,6 +169,7 @@
     margin: auto;
     overflow: hidden;
     background-color: var(--lightTwo);
+    border: 1px solid var(--lightThree);
 }
 
 .slide {
@@ -412,6 +398,7 @@
 .brand div {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 }
 
 .socials {
