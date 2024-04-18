@@ -10,7 +10,7 @@ function curriculo() {
 //Linguagens Fev
 function fevLin() {
     var a = document.createElement('a');
-    a.href = './public/pdf/linguagensFev.pdf';
+    a.href = '../pdf/linguagensFev.pdf';
     a.download = 'linguagensFev.pdf';
     a.click();
     a.remove();
@@ -24,7 +24,7 @@ function fevMat() {
 //Humanas Fev
 function fevHum() {
     var a = document.createElement('a');
-    a.href = './public/pdf/humanasFev.pdf';
+    a.href = '../pdf/humanasFev.pdf';
     a.download = 'humanasFev.pdf';
     a.click();
     a.remove();
