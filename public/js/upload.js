@@ -1,7 +1,7 @@
 //Currículo
 function curriculo() {
     var c = document.createElement('a');
-    c.href = '../pdf/currículo.pdf';
+    c.href = '../public/pdf/currículo.pdf';
     c.download = 'currículo.pdf';
     c.click();
     c.remove();
@@ -10,7 +10,7 @@ function curriculo() {
 //Linguagens 
 function lin1() {
     var l1 = document.createElement('a');
-    l1.href = '../../public/pdf/linguagens1.pdf';
+    l1.href = '../public/pdf/linguagens1.pdf';
     l1.download = 'linguagens1.pdf';
     l1.click();
     l1.remove();
@@ -24,7 +24,7 @@ function mat() {
 //Humanas 
 function hum1() {
     var h1 = document.createElement('a');
-    h1.href = '../../public/pdf/humanas1.pdf';
+    h1.href = '../public/pdf/humanas1.pdf';
     h1.download = 'humanas1.pdf';
     h1.click();
     h1.remove();
