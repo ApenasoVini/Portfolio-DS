@@ -1,7 +1,7 @@
 //Currículo
 function curriculo() {
     var a = document.createElement('a');
-    a.href = './public/pdf/currículo.pdf';
+    a.href = '../pdf/currículo.pdf';
     a.download = 'currículo.pdf';
     a.click();
     a.remove();
@@ -10,7 +10,7 @@ function curriculo() {
 //Linguagens 
 function lin1() {
     var a = document.createElement('a');
-    a.href = '.public/pdf/linguagens1.pdf';
+    a.href = '../pdf/linguagens1.pdf';
     a.download = 'linguagens1.pdf';
     a.click();
     a.remove();
