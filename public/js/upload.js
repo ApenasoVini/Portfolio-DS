@@ -1,19 +1,19 @@
 //Currículo
 function curriculo() {
-    var a = document.createElement('a');
-    a.href = '../pdf/currículo.pdf';
-    a.download = 'currículo.pdf';
-    a.click();
-    a.remove();
+    var c = document.createElement('a');
+    c.href = '../pdf/currículo.pdf';
+    c.download = 'currículo.pdf';
+    c.click();
+    c.remove();
 }
 
 //Linguagens 
 function lin1() {
-    var a = document.createElement('a');
-    a.href = '../../public/pdf/linguagens1.pdf';
-    a.download = 'linguagens1.pdf';
-    a.click();
-    a.remove();
+    var l1 = document.createElement('a');
+    l1.href = '../../public/pdf/linguagens1.pdf';
+    l1.download = 'linguagens1.pdf';
+    l1.click();
+    l1.remove();
 }
 
 //Matemática 
@@ -23,11 +23,11 @@ function mat() {
 
 //Humanas 
 function hum1() {
-    var a = document.createElement('a');
-    a.href = '../../public/pdf/humanas1.pdf';
-    a.download = 'humanas1.pdf';
-    a.click();
-    a.remove();
+    var h1 = document.createElement('a');
+    h1.href = '../../public/pdf/humanas1.pdf';
+    h1.download = 'humanas1.pdf';
+    h1.click();
+    h1.remove();
 }
 
 //Natureza 
