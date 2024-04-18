@@ -1,8 +1,8 @@
 //Currículo
 function curriculo() {
     var c = document.createElement('a');
-    c.href = '../pdf/currículo.pdf';
-    c.download = 'currículo.pdf';
+    c.href = '../pdf/curriculo.pdf';
+    c.download = 'curriculo.pdf';
     c.click();
     c.remove();
 }
