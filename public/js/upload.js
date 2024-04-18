@@ -1,7 +1,7 @@
 //Currículo
 function curriculo() {
     var a = document.createElement('a');
-    a.href = './assets/pdf/currículo.pdf';
+    a.href = './public/pdf/currículo.pdf';
     a.download = 'currículo.pdf';
     a.click();
     a.remove();
@@ -10,7 +10,7 @@ function curriculo() {
 //Linguagens Fev
 function fevLin() {
     var a = document.createElement('a');
-    a.href = './assets/pdf/linguagensFev.pdf';
+    a.href = './public/pdf/linguagensFev.pdf';
     a.download = 'linguagensFev.pdf';
     a.click();
     a.remove();
@@ -24,7 +24,7 @@ function fevMat() {
 //Humanas Fev
 function fevHum() {
     var a = document.createElement('a');
-    a.href = './assets/pdf/humanasFev.pdf';
+    a.href = './public/pdf/humanasFev.pdf';
     a.download = 'humanasFev.pdf';
     a.click();
     a.remove();
