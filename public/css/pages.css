@@ -38,9 +38,8 @@ main>i:hover {
 
 .slide.active {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
     width: 55rem;
     height: 35rem;
     padding: 3%;
