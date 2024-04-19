@@ -104,7 +104,15 @@
                             <li>Edição de Vídeo</li>
                             <li><b>Buscando vagas de estágio</b></li>
                             <button onclick="curriculo()">Baixar Currículo</button>
-                            <script src="./public/js/upload.js"></script>
+                            <script>
+                                function curriculo() {
+                                    var x = document.createElement('a');
+                                    x.href = './public/pdf/curriculo.pdf';
+                                    x.download = 'curriculo.pdf';
+                                    x.click();
+                                    x.remove();
+                                }
+                            </script>
                         </ul>
                     </div>
                 </div>
