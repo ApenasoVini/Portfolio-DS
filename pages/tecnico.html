@@ -24,8 +24,7 @@
                     <span>
                         <p>Documento contendo tipos de usuários, proposta de valor, público alvo e requisitos de um
                             sistema de voluntários</p>
-                        <button onclick="tec1()">Ver Atividade</button>
-                        <script src="../public/js/activities.js"></script>
+                        <button onclick="window.open(`https://docs.google.com/document/d/1_JpEWo0CL762ihjKYFdCxLP-6-SB_Ci3A3M_sLVx49s/edit?usp=sharing`, '_blank');">Ver Atividade</button>
                     </span>
                 </div>
             </div>
@@ -38,8 +37,7 @@
                     <span>
                         <p>Simulamos uma manutenção de software, com um documento e imagens explicando o problema, o
                             processo e a resolução</p>
-                        <button onclick="tec2()">Ver Atividade</button>
-                        <script src="../public/js/activities.js"></script>
+                        <button onclick="window.open(`https://docs.google.com/document/d/1jsZE1ZCcx1sv1Czd1_OtBJxf6yjW5MZqBuZ2HJRuPZo/edit?usp=sharing`, '_blank');">Ver Atividade</button>
                     </span>
                 </div>
             </div>
@@ -51,8 +49,29 @@
                     </span>
                     <span>
                         <p>Página Web responsiva de uma galeria, com <b>header</b> e <b>footer</b></p>
-                        <button onclick="tec3()">Ver Atividade</button>
-                        <script src="../public/js/activities.js"></script>
+                        <button onclick="window.open(`https://github.com/ApenasoVini/Senai/tree/main/L%C3%B3gica%20Computacional/React`, '_blank');">Ver Atividade</button>
+                    </span>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <span>
+                        <h2>Apresentação - SA</h2>
+                        <img src="../public/img/tec4.png" alt="ilustração">
+                    </span>
+                    <span>
+                        <p>Apresentação da SA <b>(Compasio)</b>, contendo a ideia, requisitos funcionais, regras de
+                            negócio, tabela comparativa e protótipos de baixa fidelidade</p>
+                        <button onclick="tec4()">Ver Atividade</button>
+                        <script>
+                            function tec4() {
+                                var x = document.createElement('a');
+                                x.href = '../public/pdf/apresentacaoSA.pdf';
+                                x.download = 'apresentacaoSA.pdf';
+                                x.click();
+                                x.remove();
+                            }
+                        </script>
                     </span>
                 </div>
             </div>
