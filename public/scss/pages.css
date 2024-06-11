@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F3F3F3;
+  font-family: "Inter", sans-serif;
+  height: auto;
+  width: 100%;
+  font-style: normal;
+}
+body h1 {
+  font-weight: 600;
+}
+body h2 {
+  font-weight: 500;
+}
+body h3 {
+  font-weight: 400;
+}
+body p {
+  font-weight: 300;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  inline-size: inherit;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+main i {
+  font-size: 2rem;
+  color: rgba(40, 39, 41, 0.6862745098);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.2s all;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main i:hover {
+  color: rgba(57, 57, 231, 0.662745098);
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 55rem;
+  max-height: 35rem;
+  margin: auto;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border: 1px solid #969696;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: flex;
+  inline-size: inherit;
+  justify-content: center;
+  align-items: center;
+  width: 55rem;
+  height: 35rem;
+  padding: 3%;
+}
+.slide.active h1 {
+  background-color: #191815;
+  color: #FFF;
+  padding: 3%;
+}
+.slide.active div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+.slide.active span {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  inline-size: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.slide.active span h2 {
+  border-bottom: 2px solid #000000;
+  width: -moz-max-content;
+  width: max-content;
+}
+.slide.active span img {
+  border: 1px solid #969696;
+  max-width: 30vw;
+}
+.slide.active span p {
+  text-align: justify;
+}
+.slide.active span button {
+  color: #FFF;
+  background-color: #191815;
+  transition: ease 0.4s;
+  width: 65%;
+  height: 3rem;
+  border: 1px solid #191815;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.slide.active span button:hover {
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #191815;
+}/*# sourceMappingURL=pages.css.map */
