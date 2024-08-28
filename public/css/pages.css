@@ -113,7 +113,7 @@ main i:hover {
 
 .slide.active span img {
   border: 1px solid #969696;
-  max-width: 30vw;
+  max-width: 20vw;
 }
 
 .slide.active span p {
