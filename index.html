@@ -41,7 +41,7 @@
                         <p>Documento contendo tipos de usuários, proposta de valor, público alvo e requisitos de um
                             sistema de voluntários</p>
                         <button
-                            onclick="window.open(`https://docs.google.com/document/d/1_JpEWo0CL762ihjKYFdCxLP-6-SB_Ci3A3M_sLVx49s/edit?usp=sharing`, '_blank');">Ver
+                            onclick="window.open(`https://docs.google.com/document/d/1RFRvm8-j4b4d4mlzGbAMS1GIlFoL2hdz5D7oD4FU9wM/edit?usp=sharing`, '_blank');">Ver
                             Atividade</button>
                     </span>
                 </div>
@@ -56,8 +56,8 @@
                         <p>Simulamos uma manutenção de software, com um documento e imagens explicando o problema, o
                             processo e a resolução</p>
                         <button
-                            onclick="window.open(`https://docs.google.com/document/d/1jsZE1ZCcx1sv1Czd1_OtBJxf6yjW5MZqBuZ2HJRuPZo/edit?usp=sharing`, '_blank');">Ver
-                            Atividade</button>
+                            onclick="window.open(`https://docs.google.com/document/d/1KFrRb3GYvvaY7s5gKJGjEUhl2P3P8Q36PFmTnmLf2Po/edit?usp=sharing`, '_blank');">Ver
+                            Atjividade</button>
                     </span>
                 </div>
             </div>
@@ -122,84 +122,58 @@
                     </span>
                 </div>
             </div>
+            <div class="slide-atividades">
+                <div>
+                    <span>
+                        <h2>Modelagem - NFs</h2>
+                        <img src="./public/img/tec8.png" alt="ilustração">
+                    </span>
+                    <span>
+                        <p>Modelagem feita com Draw.io</p>
+                        <button
+                            onclick="window.open(`https://drive.google.com/file/d/1iDal1HSN8M6wm0ZG28dwTYe9bPwg5ZOc/view?usp=sharing`, '_blank');">Ver
+                            Atividade</button>
+                    </span>
+                </div>
+            </div>
         </div>
         <i class="next fa-solid fa-chevron-right"></i>
         <script src="../public/js/slides.js"></script>
     </main>
 
-    <section id="criador" class="slides">
-        <i class="prev fa-solid fa-chevron-left"></i>
-        <div class="slideshow-container">
-            <div class="slide-sobre">
-                <div>
-                    <div class="presentation">
-                        <img src="./public/img/perfil.jpeg" alt="vini">
-                        <span>
-                            <h2>Vinícius Soares França</h2>
-                            <p>Criador</p>
-                        </span>
-                    </div>
-                    <div class="skills">
-                        <ul>
-                            <li>Dev <span class="blue">Frontend</span></li>
-                            <li>Técnico em <span class="blue">DS</span> pelo <span class="blue">SENAI</span>
-                            </li>
-                            <li>Design</li>
-                        </ul>
-                        <ul>
-                            <li>Edição de Vídeo</li>
-                            <li><b>Buscando vagas de estágio</b></li>
-                            <button onclick="curriculo()">Baixar Currículo</button>
-                            <script>
-                                function curriculo() {
-                                    var x = document.createElement('a');
-                                    x.href = './public/pdf/curriculo.pdf';
-                                    x.download = 'curriculo.pdf';
-                                    x.click();
-                                    x.remove();
-                                }
-                            </script>
-                        </ul>
-                    </div>
-                </div>
+    <section id="criador">
+        <div class="content">
+            <div class="presentation">
+                <img src="./public/img/perfil.jpeg" alt="vini">
+                <span>
+                    <h2>Vinícius Soares França</h2>
+                    <p>Criador</p>
+                </span>
             </div>
-            <div class="slide-sobre">
-                <div>
-                    <h2>Skills</h2>
-                    <ul class="tech">
-                        <li>
-                            <img src="./public/img/vuejs.svg" />
-                            <img src="./public/img/react.svg" />
-                            <img src="./public/img/tailwindcss.svg" />
-                            <img src="./public/img/sass.svg" />
-                        </li>
-                        <li>
-                            <img src="./public/img/jest.svg" />
-                            <img src="./public/img/prisma.svg" />
-                            <img src="./public/img/nestjs.svg" />
-                        </li>
-                    </ul>
-                </div>
+            <div class="skills">
+                <img src="./public/img/vuejs.svg" />
+                <img src="./public/img/react.svg" />
+                <img src="./public/img/tailwindcss.svg" />
+                <img src="./public/img/sass.svg" />
+                <img src="./public/img/jest.svg" />
+                <img src="./public/img/prisma.svg" />
+                <img src="./public/img/nestjs.svg" />
             </div>
-            <div class="slide-sobre">
+            <div class="goals">
                 <div>
-                    <div>
-                        <h2>Metas</h2>
-                        <p>Aprender mais tecnologias de design</p>
-                        <p>Aprender tecnologias de backend</p>
-                        <p>Adquirir conhecimento prático</p>
-                    </div>
-                    <div>
-                        <h2>Objetivos</h2>
-                        <p>Me tornar um Dev pleno</p>
-                        <p>Me garantir profissionalmente</p>
-                        <p>Contribuir para a construção de Softwares</p>
-                    </div>
+                    <h2>Metas</h2>
+                    <p>Aprender mais tecnologias de design</p>
+                    <p>Aprender tecnologias de backend</p>
+                    <p>Adquirir conhecimento prático</p>
+                </div>
+                <div>
+                    <h2>Objetivos</h2>
+                    <p>Me tornar um Dev pleno</p>
+                    <p>Me garantir profissionalmente</p>
+                    <p>Contribuir para a construção de Softwares</p>
                 </div>
             </div>
         </div>
-        <i class="next fa-solid fa-chevron-right"></i>
-        <script src="./public/js/slides.js"></script>
     </section>
 
     <footer id="contato">
