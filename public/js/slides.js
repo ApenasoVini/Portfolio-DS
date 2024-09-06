@@ -1,20 +1,28 @@
-let slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
+const slides = document.querySelectorAll('.slide-atividades, .slide-sobre'); 
 
-function showSlide(n) {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
+function hideAllSlides() {
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+}
+
+function showSlide(index) {
+  hideAllSlides();
+  slides[index].classList.add('active');
 }
 
 function nextSlide() {
-    showSlide(currentSlide + 1);
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
 }
 
 function prevSlide() {
-    showSlide(currentSlide - 1);
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
 }
 
-showSlide(currentSlide);
 document.querySelector('.next').addEventListener('click', nextSlide);
 document.querySelector('.prev').addEventListener('click', prevSlide);
+
+showSlide(currentSlide);
