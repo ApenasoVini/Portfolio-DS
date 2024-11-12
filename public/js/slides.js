@@ -3,11 +3,12 @@ const slidesContainer = document.querySelector('.slides');
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
-if (totalSlides > 0) {
-    function changeSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`; 
-    }
+function changeSlide() {
+    const offset = -(currentSlide * 100);
+    slidesContainer.style.transform = `translateX(${offset}%)`;
+    currentSlide = (currentSlide + 1) % totalSlides;
+}
 
-    setInterval(changeSlide, 3000);
-} 
+if (totalSlides > 0) {
+    setInterval(changeSlide, 8000);
+}
