@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
-    <title>Portfólio</title>
+    <script src="./public/js/slides.js"></script>
+    <title>VSF | Início</title>
 </head>
 
-<body>
+<body class="home">
     <header>
         <nav>
             <ul>
                 <li>
-                    <h1>Portfólio</h1>
+                    <h1>Vinícius S.F</h1>
+                    <p>Portfólio</p>
                 </li>
             </ul>
             <ul>
-                <li><a href='#atividades'>Atividades</a></li>
-                <li><a href='#criador'>Sobre</a></li>
-                <li><a href='#contato'>Contato</a></li>
+                <li><a href='#atividades'>Início</a></li>
+                <span>|</span>
+                <li><a href='#contato'>Atividades</a></li>
+                <span>|</span>
+                <li><a href='#sobre'>Sobre</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="parallax"></div>
+    <!-- <div class="parallax"></div>
 
     <main id="atividades" class="activities-list">
         <div class="activity">
@@ -97,41 +101,44 @@
                 onclick="window.open(`https://drive.google.com/file/d/1iDal1HSN8M6wm0ZG28dwTYe9bPwg5ZOc/view?usp=sharing`, '_blank');">Ver
                 Atividade</button>
         </div>
-    </main>
-
-    <section id="criador">
-        <div class="content">
-            <div class="presentation">
-                <img src="./public/img/perfil.jpeg" alt="vini">
-                <span>
-                    <h2>Vinícius Soares França</h2>
-                    <p>Criador</p>
-                </span>
-            </div>
-            <div class="skills">
-                <img src="./public/img/vuejs.svg" />
+    </main> -->
+    <section id="sobre">
+        <div class="creator">
+            <img src="./public/img/perfil.jpeg" alt="vini">
+            <span>
+                <h2>Vinícius Soares França</h2>
+                <p>Criador</p>
+            </span>
+        </div>
+        <div class="slides">
+            <div class="slide">
                 <img src="./public/img/react.svg" />
+                <img src="./public/img/nextjs.svg" />
                 <img src="./public/img/tailwindcss.svg" />
                 <img src="./public/img/sass.svg" />
             </div>
-            <div class="goals">
-                <div>
-                    <h2>Metas</h2>
-                    <p>Aprender mais tecnologias de design</p>
-                    <p>Aprender tecnologias de backend</p>
-                    <p>Adquirir conhecimento prático</p>
-                </div>
-                <div>
-                    <h2>Objetivos</h2>
-                    <p>Me tornar um Dev pleno</p>
-                    <p>Me garantir profissionalmente</p>
-                    <p>Contribuir para a construção de Softwares</p>
-                </div>
+            <div class="slide">
+                <img src="./public/img/javaScript.svg" />
+                <img src="./public/img/typeScript.svg" />
+                <img src="./public/img/django.svg" />
+                <img src="./public/img/nodejs.svg" />
+            </div>
+            <div class="slide">
+                <img src="./public/img/git.svg" />
+                <img src="./public/img/postgresql.svg" />
+                <img src="./public/img/mysql.svg" />
             </div>
         </div>
+        <div class="desc">
+            <p>Meu objetivo é crescer como desenvolvedor, aprimorando minhas habilidades e expandindo meu
+                conhecimento tanto em front-end quanto em tecnologias de back-end. Estou focado em adquirir uma
+                compreensão profunda das ferramentas e práticas do mercado, para que eu possa construir soluções
+                robustas e inovadoras. Com essa base sólida, pretendo alcançar uma posição plena e consolidar minha
+                carreira, contribuindo para o desenvolvimento de softwares que impactem positivamente as pessoas e
+                facilitem o dia a dia de muitos.</p>
+        </div>
     </section>
-
-    <footer id="contato">
+    <!-- <footer id="contato">
         <div class="brand">
             <img src="./public/img/icon.svg" alt="logo">
             <div>
@@ -166,7 +173,7 @@
         </div>
 
         <p class="copy">&copy; Portfólio 2024 | Todos os direitos reservados</p>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
