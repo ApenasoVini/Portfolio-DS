@@ -13,7 +13,6 @@ body.home {
   background-size: cover;
   width: 100%;
   font-style: normal;
-  color: #333;
 }
 
 header {
@@ -60,7 +59,7 @@ header a:hover {
 .activities-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items: center;  
+  place-items: center;
   gap: 2rem;
   padding: 3%;
 }
@@ -150,7 +149,7 @@ header a:hover {
 
 .slides {
   display: flex;
-  transition: transform 1s ease; 
+  transition: transform 1s ease;
   width: 100%;
 }
 
@@ -159,16 +158,29 @@ header a:hover {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
 }
 
-.slide img {
+.slide .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.slide .icons img {
   width: 4rem;
   height: auto;
   transition: transform 0.3s ease;
 }
 
-.slide img:hover {
+.slide .icons img:hover {
   transform: scale(1.2);
+}
+
+.slide .txt {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: #e0e0e0;
 }
 
 .desc p {
