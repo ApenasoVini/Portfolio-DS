@@ -58,7 +58,7 @@
             <script>
                 function tec4() {
                     var x = document.createElement('a');
-                    x.href = './public/pdf/apresentacaoSA.pdf';
+                    x.href = './public/utils/apresentacaoSA.pdf';
                     x.download = 'apresentacaoSA.pdf';
                     x.click();
                     x.remove();
@@ -96,6 +96,40 @@
             <button
                 onclick="window.open(`https://drive.google.com/file/d/1iDal1HSN8M6wm0ZG28dwTYe9bPwg5ZOc/view?usp=sharing`, '_blank');">Ver
                 Atividade</button>
+        </div>
+
+        <div class="activity">
+            <h2>Sonar</h2>
+            <img src="./public/img/tec9.png" alt="ilustração">
+            <p>Aplicativo de músicas utilizando React Native</p>
+            <button
+                onclick="window.open(`https://github.com/ApenasoVini/Sonar`, '_blank');">Ver
+                Atividade</button>
+        </div>
+
+        <div class="activity">
+            <h2>Compasio</h2>
+            <img src="./public/img/tec10.png" alt="ilustração">
+            <p>Site criado para facilitar a comunicação entre voluntários e ONGs</p>
+            <button
+                onclick="window.open(`https://github.com/Compasio`, '_blank');">Ver
+                Atividade</button>
+        </div>
+
+        <div class="activity">
+            <h2>SA - DB</h2>
+            <img src="./public/img/tec11.png" alt="ilustração">
+            <p>Situação de Aprendizagem da disciplina</p>
+            <button onclick="tec2()">Ver Atividade</button>
+            <script>
+                function tec2() {
+                    var x = document.createElement('a');
+                    x.href = './public/utils/loja.sql';
+                    x.download = 'loja.sql';
+                    x.click();
+                    x.remove();
+                }
+            </script>
         </div>
     </main>
 
