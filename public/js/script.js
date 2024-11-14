@@ -12,3 +12,12 @@ function changeSlide() {
 if (totalSlides > 0) {
     setInterval(changeSlide, 8000);
 }
+
+function showArea(area) {
+    const areas = document.querySelectorAll('.area-content');
+    areas.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    document.getElementById(area).classList.add('active');
+}
