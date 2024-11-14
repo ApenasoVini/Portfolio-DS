@@ -22,46 +22,91 @@ header {
   color: #FFF;
 }
 
-header nav {
+nav {
   display: flex;
   justify-content: center;
   gap: 10rem;
   align-items: start;
 }
 
-header ul {
+nav ul {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-header li {
+nav li {
   list-style: none;
   text-transform: uppercase;
 }
 
-header li h1 {
+nav li h1 {
   letter-spacing: 0.4rem;
   font-size: 1.5rem;
 }
 
-header a {
+nav a {
   text-decoration: none;
   color: #FFF;
   transition: color 0.2s ease, border-bottom 0.3s ease;
 }
 
-header a:hover {
+nav a:hover {
   border-bottom: 1px solid #FFF;
   font-weight: 500;
 }
 
-.activities-list {
+.button {
+  padding: .75rem;
+  width: 10rem;
+  border: 1px solid #FFF;
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #FFF;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #000;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   gap: 2rem;
   padding: 3%;
+}
+
+.area-content {
+  display: none;
+}
+
+.area-content.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .activity {
